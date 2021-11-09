@@ -1,0 +1,57 @@
+alumno = {"nombre":"jose"}
+print(alumno)
+print(alumno["nombre"])
+alumno = {"nombre": "jose", "no. de cuenta":"1232143256","edad":"18"}
+print(alumno)
+print("edad del alumno =", alumno["edad"])
+print(alumno["nombre"].upper())
+print("Alumno2")
+alumno2 = dict() #{}
+alumno2["nombre"] = "jose"
+print(alumno2)
+alumno2["NC"] = "13213124124"
+alumno2["edad"] = "18"
+print(alumno2)
+alumno2["edad"] = alumno2["edad"] + 1
+print(alumno2)
+
+cliente = {"id": "CT2122", "nombre":"Jose Pedrosa Rosales", 
+           "telefonos":"casa=5553243242 cel=5554235236"}
+print(cliente)
+cliente = {"id": "CT2122", "nombre": {"Nombres" : ["jose"],
+            "paterno": "Pedroza",
+            "materno": "Rosales"
+            }, 
+           "telefonos":{
+            "Casa": "55532153" ,
+            "trabajo": "5543254235",   
+            "Celular": "5535215"
+            },
+           "productos":{ 
+               "ahorro": {"numero_cuenta":"7788", "ahorro": 2500.5},
+               "tarjetas": [
+                             {"tipo":"debito", "saldo": 1000},
+                             {"tipo":"credito preferente", "limite":250000},
+                             {"tipo": "lite", "limite":1500},
+
+                          
+               ]
+           },
+           "dirección":{
+               "calle":"av,central",
+               "numero": 4321,
+               "colonia": "impúlsora",
+               "delegación": "neza",
+               "estado":{
+                   "clave":15,
+                   "nombre_corto":"EDOMEX",
+                   "nombre": "Estado de mexico",
+               }
+
+
+           }
+           }
+print(cliente["telefonos"]["Casa"])
+print(cliente)
+print(cliente ["productos"]["ahorro"]["ahorro"])
+print( cliente ["productos"]["tarjetas"][2]["limite"])
